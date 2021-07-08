@@ -1,0 +1,20 @@
+.b-breadcrumbs {
+    &__item {
+        display: inline;
+
+        & + &:before {
+            content:"/";
+        }
+    }
+
+    &__link {
+        font-weight: 300;
+        font-size: 14px;
+        line-height: 17px;
+        color: #636363;;
+
+        &_active { 
+            color: var(--cl-theme);
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.b-featured {
+    padding: 66px 0 96.5px;
+    text-align: center;
+
+    @include media-breakpoint-between(sm, lg) {
+        padding: 155px 0 65px;
+    }
+      
+    @include media-breakpoint-up(lg) {
+        padding: 96px 0 95.5px;
+    }
+    
+    &__heading {
+        font-size: 30px;
+        line-height: 36px;
+        color: #222222;
+    }
+
+    &__text {
+        margin-top: 4px;
+        font-size: 14px;
+        line-height: 17px;
+        color: #9F9F9F;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 6px;
+        }
+    }
+
+    &__items {
+        padding-top: 61.7px;
+        padding-bottom: 37.11px;
+        
+        @include media-breakpoint-between(sm, lg) {
+            padding-top: 72.74px;
+            padding-bottom: 33px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-top: 48px;
+            padding-bottom: 47.5px;
+        }
+    }
+
+    &__btn {
+        @include media-breakpoint-down(sm) {
+            margin-right: 14px;
+            width: 212px;
+        }
+
+
+        width: 211px;
+        height: 48px;
+    }
+}

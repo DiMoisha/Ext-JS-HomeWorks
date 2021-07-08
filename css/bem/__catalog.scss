@@ -1,0 +1,31 @@
+.b-catalog {
+    padding-bottom: 64px;
+
+    @include media-breakpoint-up(md) {
+        padding-bottom: 63px;
+    }
+
+    @include media-breakpoint-up(lg) {
+        padding-bottom: 96px;
+    }
+
+    &__list {
+        padding: 32px 0 40px;
+
+        @include media-breakpoint-between(md, lg) {
+            padding: 40px 0 40px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding: 65px 0 48px;
+        }
+    }
+
+    & > .b-filterbar {
+        margin-top: 24px;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 51px;
+        }
+    }
+}

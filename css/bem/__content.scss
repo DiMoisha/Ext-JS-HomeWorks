@@ -1,0 +1,47 @@
+.b-content {
+    &_center {
+        text-align: center;
+    }
+
+    &__header {
+        background: #F8F3F4;
+
+        &Container {
+            @extend .b-container;
+            @extend .b-container_wide;
+            
+            height: 148px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+
+            @include media-breakpoint-up(md) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        &Nav {
+            //padding: 32px 0 22px;
+            //padding: 32px 0 46px;
+            padding: 8px 0 46px;
+                    
+            @include media-breakpoint-up(md) {
+                padding: 0;  
+            }
+        }
+    }
+  
+    &__heading {
+        font-size: 24px;
+        line-height: 29px;
+        color: var(--cl-theme);
+        padding: 24px 0 24px;
+
+        @include media-breakpoint-up(md) {
+            padding: 0;  
+        }
+    }
+}

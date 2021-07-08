@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+  
+body {
+    font-family: sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    color: #222224;
+}
+
+html, body {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+
+    &:hover {
+        color: inherit;
+        opacity: 0.6;
+        text-decoration: none;
+    }
+}
+
+ol, ul, dl  {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+// Reboot bootstrap styles
+img, svg {
+    vertical-align: unset;
+}
+
+div, section, header, nav, p, span, a, img, blockquote,
+h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
+    margin: 0;
+    padding: 0;
+}
+
+
+// Custom elements
+.page-wrapper {
+    display: grid;
+    min-height: 100vh;
+    grid-template-rows: minmax(auto, auto) 1fr minmax(auto, auto);
+}
+
+.cl-mark {
+    color: var(--cl-theme);
+}
+
+.bg-mark {
+    background-color: var(--cl-theme);
+}
