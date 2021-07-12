@@ -12219,6 +12219,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
   background: #F8F8F8;
   text-align: left;
   max-width: 360px;
+  border: none;
 }
 .b-productCart:hover .b-productCart__picInner, .b-productCart:focus .b-productCart__picInner, .b-productCart:active .b-productCart__picInner {
   visibility: visible;
@@ -12258,6 +12259,7 @@ h6, .h6, h5, .h5, h4, .h4, h3, .h3, h2, .h2, h1, .h1 {
 .b-productCart__btn {
   width: 138px;
   height: 43px;
+  z-index: 200;
 }
 .b-productCart__btn > span {
   margin-left: 11px;

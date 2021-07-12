@@ -7,10 +7,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="Author" lang="ru" content="Дмитрий Карасёв">
-    <meta name="description" content="Регистрация в интернет-магазине модной одежды от ведущих мировых брендов">
+    <meta name="description"
+        content="Товар MOSCHINO CHEAP AND CHIC в интернет-магазине модной одежды от ведущих мировых брендов">
     <link rel="shortcut icon" href="../favicon.ico">
-    <title>Интернет-магазин | Регистрация</title>
+    <title>Интернет-магазин | Товар</title>
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/cart.css">
 </head>
 
 <body>
@@ -101,79 +103,221 @@
                                     fill="#E8E8E8" />
                             </svg>
                         </a>
-                        <a class="b-header__btn b-header__btn_shopCart d-none d-sm-inline-block"
-                            href="../pages/cart.html" role="button" title="Моя корзина">
+                        <a class="b-header__btn b-header__btn_shopCart d-none d-sm-inline-block" href="../pages/cart.html"
+                            role="button" title="Моя корзина">
                             <svg width="33" height="29" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path class="svg-icon"
                                     d="M27.199 29a2.477 2.477 0 11.2 0h-.2zM7.751 26.32a2.68 2.68 0 115.364 0 2.68 2.68 0 01-5.366 0h.002zm3.8-5.634a1.184 1.184 0 01-1.145-.867L5.573 2.364H2.18A1.182 1.182 0 012.18 0h4.281a1.183 1.183 0 011.144.868l4.833 17.455h13.178l4.383-10.048h-14.6a1.183 1.183 0 110-2.365h16.413a1.178 1.178 0 01.986.533 1.193 1.193 0 01.1 1.122l-5.405 12.412a1.184 1.184 0 01-1.084.709H11.551z"
                                     fill="#E8E8E8" />
                             </svg>
-                            <span>5</span>
+                            <span class="cartCounter">0</span>
                         </a>
                     </div>
                 </nav>
             </div>
         </header>
+
+        <div class="cartContent collapse"></div>
+
         <main class="b-content">
-            <section class="b-reg">
+            <section class="b-product">
                 <header class="b-content__header">
                     <div class="b-content__headerContainer">
-                        <h1 class="b-content__heading">REGISTRATION</h1>
+                        <h1 class="b-content__heading">NEW ARRIVALS</h1>
+                        <nav class="b-breadcrumbs b-content__headerNav">
+                            <ul class="b-breadcrumbs__nav">
+                                <li class="b-breadcrumbs__item">
+                                    <a class="b-breadcrumbs__link" href="../index.html">HOME</a>
+                                </li>
+                                <li class="b-breadcrumbs__item">
+                                    <a class="b-breadcrumbs__link" href="../pages/catalog.html">MAN</a>
+                                </li>
+                                <li class="b-breadcrumbs__item">
+                                    <a class="b-breadcrumbs__link b-breadcrumbs__link_active "
+                                        href="../pages/catalog.html">NEW ARRIVALS</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
                 </header>
                 <!-- BOOTSTRAP -->
-                <div class="b-container b-container_wide b-reg__container">
-                    <div class="row g-0 align-items-start justify-content-between">
-                        <div class="col-12 col-md-6 col-lg-4 b-reg__formWrap">
-                            <form class="b-form" action="#reg" method="POST">
-                                <label class="b-form__label" for="form-first-name">Your Name</label>
-                                <input class="b-form__input" type="text" name="first-name" id="form-first-name"
-                                    placeholder="First Name">
-                                <input class="b-form__input" type="text" name="last-name" id="form-last-name"
-                                    placeholder="Last Name">
-                                <div class="b-form__group">
-                                    <input class="b-form__radio b-form__input" type="radio" name="sex"
-                                        id="form-sex-male">
-                                    <label class="b-form__label" for="form-sex-male">Male</label>
-                                    <input class="b-form__radio b-form__input" type="radio" name="sex"
-                                        id="form-sex-female">
-                                    <label class="b-form__label" for="form-sex-female">Female</label>
-                                    <input class="b-form__radio b-form__input" type="radio" name="sex"
-                                        id="form-sex-other">
-                                    <label class="b-form__label" for="form-sex-other">Other</label>
-                                </div>
-                                <label class="b-form__label" for="form-email">Login details</label>
-                                <input class="b-form__input" type="email" name="email" id="form-email"
-                                    placeholder="Email">
-                                <input class="b-form__input" type="password" name="password" id="form-pwd"
-                                    placeholder="Password">
-                                <p class="b-form__prompt">Please use 8 or more characters, with at least 1 number and a
-                                    mixture of uppercase and lowercase letters</p>
-                                <button class="b-btn b-btn_color b-form__btn b-reg__btn" type="submit"
-                                    title="join now">JOIN NOW&nbsp;&rarr;</button>
-                            </form>
+                <div id="bcarousel" class="b-carousel carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="b-carousel__inner carousel-inner">
+                        <div class="b-carousel__item carousel-item active">
+                            <img src="../img/product/product-13-full.png" class="d-block b-carousel__img"
+                                alt="Изображение товара 1">
                         </div>
-                        <div class="col-12 col-md-6 col-lg-8 b-reg__infoWrap clearfix">
-                            <aside class="b-reg__info">
-                                <p class="b-reg__infoheading">LOYALTY HAS ITS PERKS</p>
-                                <p class="b-reg__infotext">
-                                    Get in on the loyalty program where you can earn points and unlock serious perks.
-                                    Starting with these as soon as you join:
-                                </p>
-                                <ul class="b-reg-infolist">
-                                    <li class="b-reg__infoitem"><span>15% off welcome offer</span></li>
-                                    <li class="b-reg__infoitem"><span>Free shipping, returns and exchanges on all
-                                            orders</span></li>
-                                    <li class="b-reg__infoitem"><span>$10 off a purchase on your birthday</span></li>
-                                    <li class="b-reg__infoitem"><span>Early access to products</span></li>
-                                    <li class="b-reg__infoitem"><span>Exclusive offers & rewards</span></li>
-                                </ul>
-                            </aside>
+                        <div class="b-carousel__item carousel-item">
+                            <img src="../img/product/product-12.png" class="d-block b-carousel__img"
+                                alt="Изображение товара 2">
+                        </div>
+                        <div class="b-carousel__item carousel-item">
+                            <img src="../img/product/product-11.png" class="d-block b-carousel__img"
+                                alt="Изображение товара 3">
                         </div>
                     </div>
+                    <button class="b-carousel__btn b-carousel__btn_prev carousel-control-prev" type="button"
+                        data-bs-target="#bcarousel" data-bs-slide="prev">
+                        <span class="b-carousel__prev carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="b-carousel__btn b-carousel__btn_next carousel-control-next" type="button"
+                        data-bs-target="#bcarousel" data-bs-slide="next">
+                        <span class="b-carousel__next carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
                 </div>
                 <!--/ BOOTSTRAP -->
+                <div class="b-productdescr">
+                    <div class="b-productdescr__container">
+                        <div class="b-productdescr__top">
+                            <p class="b-productdescr__category">WOMEN COLLECTION</p>
+                            <hr class="b-productdescr__devider">
+                            <h2 class="b-productdescr__heading">MOSCHINO CHEAP AND CHIC</h2>
+                            <p class="b-productdescr__descr">
+                                Compellingly actualize fully researched processes before proactive outsourcing.
+                                Progressively syndicate
+                                collaborative architectures before cutting-edge services. Completely visualize parallel
+                                core
+                                competencies rather than exceptional portals.
+                            </p>
+                            <p class="b-productdescr__price">$561</p>
+                            <hr class="b-productdescr__hr">
+                        </div>
+                        <nav class="b-filterbar__nav b-filterbar__nav_short">
+                            <ul class="b-filterbar__hnav">
+                                <li class="b-filterbar__item">
+                                    <span class="b-filterbar__link">
+                                        CHOOSE COLOR&nbsp;
+                                        <svg class="svg-fon" width="11" height="6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="svg-icon"
+                                                d="M5.002 5.002a.714.714 0 01-.457-.164L.258 1.266a.715.715 0 01.915-1.1l3.83 3.2L8.831.28a.714.714 0 011.007.107.714.714 0 01-.1 1.043L5.452 4.88a.714.714 0 01-.45.122z"
+                                                fill="#6F6E6E" />
+                                        </svg>
+                                    </span>
+                                    <div class="b-filterbar__subitem b-filterbar__collapse">
+                                        <form class="b-form b-filterbar__form" action="#filter" method="POST">
+                                            <div class="b-form__group">
+                                                <input class="b-filterbar__formitem" type="checkbox" name="filter-Blue"
+                                                    id="filter-Blue">
+                                                <label class="b-filterbar__formitem" for="filter-Blue">Blue</label>
+                                            </div>
+                                            <div class="b-form__group">
+                                                <input class="b-filterbar__formitem" type="checkbox"
+                                                    name="filter-Yellow" id="filter-Yellow">
+                                                <label class="b-filterbar__formitem" for="filter-Yellow">Yellow</label>
+                                            </div>
+                                            <div class="b-form__group">
+                                                <input class="b-filterbar__formitem" type="checkbox" name="filter-Red"
+                                                    id="filter-Red">
+                                                <label class="b-filterbar__formitem" for="filter-Red">Red</label>
+                                            </div>
+                                            <div class="b-form__group">
+                                                <input class="b-filterbar__formitem" type="checkbox" name="filter-Green"
+                                                    id="filter-Green">
+                                                <label class="b-filterbar__formitem" for="filter-Green">Green</label>
+                                            </div>
+                                            <div class="b-form__group">
+                                                <input class="b-filterbar__formitem" type="checkbox" name="filter-Black"
+                                                    id="filter-Black">
+                                                <label class="b-filterbar__formitem" for="filter-Black">Black</label>
+                                            </div>
+                                            <div class="b-form__group">
+                                                <input class="b-filterbar__formitem" type="checkbox" name="filter-White"
+                                                    id="filter-White">
+                                                <label class="b-filterbar__formitem" for="filter-White">White</label>
+                                            </div>
+                                            <button class="b-btn b-btn_color b-filterbar__btn" type="submit"
+                                                title="Применить фильтр" onclick="form.submit()">
+                                                Allow Filter&nbsp;&nbsp;&raquo;
+                                            </button>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="b-filterbar__item">
+                                    <span class="b-filterbar__link">
+                                        CHOOSE SIZE&nbsp;
+                                        <svg class="svg-fon" width="11" height="6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="svg-icon"
+                                                d="M5.002 5.002a.714.714 0 01-.457-.164L.258 1.266a.715.715 0 01.915-1.1l3.83 3.2L8.831.28a.714.714 0 011.007.107.714.714 0 01-.1 1.043L5.452 4.88a.714.714 0 01-.45.122z"
+                                                fill="#6F6E6E" />
+                                        </svg>
+                                    </span>
+                                    <div class="b-filterbar__subitem b-filterbar__collapse">
+                                        <form class="b-filterbar__form b-filterbar__form_hor b-form" action="#filter"
+                                            method="POST">
+                                            <input class="b-filterbar__formitem" type="checkbox" name="filter-size-xs"
+                                                id="filter-size-xs" oninput="form.submit()">
+                                            <label class="b-filterbar__formitem" for="filter-size-xs">XS</label>
+                                        </form>
+                                        <form class="b-filterbar__form b-filterbar__form_hor b-form" action="#filter"
+                                            method="POST">
+                                            <input class="b-filterbar__formitem" type="checkbox" name="filter-size-s"
+                                                id="filter-size-s" oninput="form.submit()">
+                                            <label class="b-filterbar__formitem" for="filter-size-s">S</label>
+                                        </form>
+                                        <form class="b-filterbar__form b-filterbar__form_hor b-form" action="#filter"
+                                            method="POST">
+                                            <input class="b-filterbar__formitem" type="checkbox" name="filter-size-m"
+                                                id="filter-size-m" oninput="form.submit()">
+                                            <label class="b-filterbar__formitem" for="filter-size-m">M</label>
+                                        </form>
+                                        <form class="b-filterbar__form b-filterbar__form_hor b-form" action="#filter"
+                                            method="POST">
+                                            <input class="b-filterbar__formitem" type="checkbox" name="filter-size-l"
+                                                id="filter-size-l" oninput="form.submit()">
+                                            <label class="b-filterbar__formitem" for="filter-size-l">L</label>
+                                        </form>
+                                    </div>
+                                </li>
+                                <li class="b-filterbar__item">
+                                    <span class="b-filterbar__link">
+                                        QUANTITY&nbsp;
+                                        <svg class="svg-fon" width="11" height="6" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path class="svg-icon"
+                                                d="M5.002 5.002a.714.714 0 01-.457-.164L.258 1.266a.715.715 0 01.915-1.1l3.83 3.2L8.831.28a.714.714 0 011.007.107.714.714 0 01-.1 1.043L5.452 4.88a.714.714 0 01-.45.122z"
+                                                fill="#6F6E6E" />
+                                        </svg>
+                                    </span>
+                                    <div class="b-filterbar__subitem b-filterbar__subitem_last b-filterbar__collapse">
+                                        <form class="b-filterbar__form b-filterbar__form_hor b-form" action="#filter"
+                                            method="POST">
+                                            <label class="b-filterbar__formitem" for="filter-quantity">1</label>
+                                            <input class="b-filterbar__formitem" type="range" min="1" max="10" step="1"
+                                                value="1" name="filter-quantity" id="filter-quantity"
+                                                onchange="form.submit()" oninput="maxquantity()">
+                                            <label class="b-filterbar__formitem" id="filter-label-maxquant"
+                                                for="filter-quantity">10</label>
+                                            <script>
+                                                function maxquantity() {
+                                                    quant = document.getElementById("filter-quantity").value;
+                                                    document.getElementById("filter-label-maxquant").innerHTML = quant.toString();
+                                                }
+                                            </script>
+                                        </form>
+                                    </div>
+                                </li>
+                            </ul>
+                        </nav>
+                        <a class="b-productdescr__btn" href="../pages/cart.html" role="button" title="Add to Cart">
+                            <svg width="33" height="29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path class="svg-icon"
+                                    d="M27.199 29a2.477 2.477 0 11.2 0h-.2zM7.751 26.32a2.68 2.68 0 115.364 0 2.68 2.68 0 01-5.366 0h.002zm3.8-5.634a1.184 1.184 0 01-1.145-.867L5.573 2.364H2.18A1.182 1.182 0 012.18 0h4.281a1.183 1.183 0 011.144.868l4.833 17.455h13.178l4.383-10.048h-14.6a1.183 1.183 0 110-2.365h16.413a1.178 1.178 0 01.986.533 1.193 1.193 0 01.1 1.122l-5.405 12.412a1.184 1.184 0 01-1.084.709H11.551z"
+                                    fill="#EF5B70" />
+                            </svg>
+                            <span>Add to Cart</span>
+                        </a>
+                    </div>
+                </div>
             </section>
+            <!-- BOOTSTRAP -->
+            <div class="b-container b-container_wide b-prodfeatured">
+                <div class="b-prodfeaturedList row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 g-lg-4 justify-content-center"></div>
+            </div>
+            <!--/ BOOTSTRAP -->
         </main>
         <footer class="b-footer">
             <div class="b-subscribe">
@@ -266,6 +410,7 @@
     </div>
     <script src="../js/bootstrap/bootstrap.js"></script>
     <script src="../js/collapse.js"></script>
+    <script src="../js/app.js"></script>
 </body>
 
 </html>
