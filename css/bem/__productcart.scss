@@ -5,9 +5,14 @@
         background: #F8F8F8;
         text-align: left;
         max-width: 360px;
+        border: none;
     }
 
     &:hover, &:focus, &:active {
+        // & .b-productCart__wrap {
+        //     border: 1px solid #aaa!important;
+        // }
+
         & .b-productCart__picInner {
             visibility: visible;
             animation-iteration-count: 1;
@@ -47,6 +52,7 @@
     &__btn {
         width: 138px;
         height: 43px;
+        z-index: 200;
 
         & > span {
             margin-left: 11px;

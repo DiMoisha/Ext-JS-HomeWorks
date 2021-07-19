@@ -106,9 +106,7 @@
             </div>
         </header>
 
-        <div class="cartContent collapse">
-            Корзина покупок пуста
-        </div>
+        <div class="cartContent collapse" id="cart-tab"></div>
 
         <main class="b-content">
             <div class="b-jumbotron">
@@ -156,7 +154,7 @@
                         <h2 class="b-featured__heading">Fetured Items</h2>
                         <p class="b-featured__text">Shop for items based on what we featured in this week</p>
                     </header>
-                    <div class="b-productCartList row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 g-lg-4 justify-content-center b-featured__items"></div>
+                    <div class="b-productCartList row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 g-lg-4 justify-content-center b-featured__items" id="featured-list" data-listsize="6"></div>
                     <a class="b-btn b-btn_simple b-btn_large b-featured__btn" href="pages/catalog.html" role="button"
                         title="Посмотреть все товары">Browse All Product</a>
                 </div>
@@ -276,8 +274,8 @@
         </footer>
     </div>
     <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/collapse.js"></script>
     <script src="js/app.js"></script>
-    <script src="js/cart.js"></script>
 </body>
 
 </html>
