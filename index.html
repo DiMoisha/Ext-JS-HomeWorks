@@ -105,13 +105,15 @@
         // (?![a-z]'[t])([\s\S])'|^'
         // (?<!aren)'(?!'t(?=\s|\$))
 
+        // (\b(?:aren't)\w*)|'
+
 
         // Но мне понравился другой путь: поиск именно конструкции aren't и одинарной ковычки. 
         // Суть в том, что по такому шаблону находятся две группы, первая из которых соотвествует "aren't"
         // Далее через функцию второго параметра в replace, если это первая группа возвращаем - группу, иначе - ". 
         const txt2 = txtEl2.innerHTML;
         btnEl2.addEventListener("click", (event) => {
-            txtEl2.innerHTML =  txt2.replace(/(\b(?:aren't)\w*)|'/gim, 
+            txtEl2.innerHTML =  txt2.replace(/(aren't)|'/gim, 
                                                 function(match, p1, p2) {
                                                     if (p1) { 
                                                         return `<b style='color:red;'>${p1}</b>`; 
