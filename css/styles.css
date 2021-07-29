@@ -8,7 +8,9 @@ header {
   padding: 20px;
   margin: 20px auto;
   border: 1px solid #ccc;
-  background-color: aqua;
+  background-color: #eee;
+  border-top:30px solid #888;
+  border-bottom:3px solid orangered;
 }
 
 .content {
@@ -53,8 +55,10 @@ input {
 }
 
 .g-price {
+  padding: 10px 5px;
   color:orangered;
   font-weight: 600;
+  font-size:20px;
 }
 
 .nodata {
@@ -88,3 +92,22 @@ input {
   opacity: 0.2;
 }
 
+.addcart {
+  color:white;
+  font-size: 18px;
+  padding: 5px 20px;
+  margin-top:5px;
+  background:limegreen;
+}
+
+.addcart:hover {
+  background: orangered;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.cart-button {
+  float: right;
+}
