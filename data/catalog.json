@@ -1,0 +1,109 @@
+[
+    {
+        "id_product": 1,
+        "product_name": "Warm wool jacket",
+        "product_descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 249.99,
+        "image": "product-1.png",
+        "featured": false
+    },
+    {
+        "id_product": 2,
+        "product_name": "H&N bloose",
+        "product_descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 149.99,
+        "image": "product-2.png",
+        "featured": true
+    },
+    {
+        "id_product": 3,
+        "product_name": "Hot-hot shrink",
+        "product_descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 59.99,
+        "image": "product-3.png",
+        "featured": true
+    },
+    {
+        "id_product": 4,
+        "product_name": "Beauty jamper",
+        "product_descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 169.99,
+        "image": "product-4.png",
+        "featured": false
+    },
+    {
+        "id_product": 5,
+        "product_name": "Style shoes",
+        "product_descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 99.99,
+        "image": "product-5.png",
+        "featured": false
+    },
+    {
+        "id_product": 6,
+        "product_name": "Beauty polo",
+        "product_descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 119.99,
+        "image": "product-6.png",
+        "featured": true
+    },
+    {
+        "id_product": 7,
+        "product_name": "Gucci switer",
+        "product_descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 9.99,
+        "image": "product-7.png",
+        "featured": true
+    },
+    {
+        "id_product": 8,
+        "product_name": "Italiano style XX",
+        "product_descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 5.99,
+        "image": "product-8.png",
+        "featured": false
+    },
+    {
+        "id_product": 9,
+        "product_name": "Velo jersy",
+        "product_descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 459.99,
+        "image": "product-9.png",
+        "featured": false
+    },
+    {
+        "id_product": 10,
+        "product_name": "Winter jacket",
+        "product_descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 2199.99,
+        "featured": true
+    },
+    {
+        "id_product": 11,
+        "product_name": "Shink-fink",
+        "product_descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 78.99,
+        "featured": false
+    },
+    {
+        "id_product": 12,
+        "product_name": "Red trauses",
+        "product_descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 11.99,
+        "featured": true
+    },
+    {
+        "id_product": 13,
+        "product_name": "Black hat",
+        "product_descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 22.99,
+        "featured": true
+    },
+    {
+        "id_product": 14,
+        "product_name": "Smiley polo by Gucci",
+        "product_descr": "Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery teams up with Moda Operandi.",
+        "price": 199.99,
+        "featured": true
+    }
+]

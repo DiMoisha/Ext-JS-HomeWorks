@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="language" content="ru">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" lang="ru" content="Дмитрий Карасёв">
+    <meta name="description" content="Интернет-магазин">
+    <link rel="shortcut icon" href="favicon.ico">
+    <title>Интернет-магазин | Главная</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div id="app">
+        <div v-bind:class="{ disabled: isVisibleCart }">
+            <header>
+                <h1>Интернет-магазин модной одежды</h1>
+                <div class="header">
+                    <search-block v-bind:_searchLine="searchLine" @search="FilterGoods" @cart="ShowCart"></search-block>
+                </div>
+            </header>
+            <main class="content">
+                <h2>Каталог</h2>
+                <hr>
+                <goods-list v-if="filteredGoods.length != 0" :goods="filteredGoods"></goods-list>
+                <nodata-msg v-if="filteredGoods.length === 0" msg="Нет данных!"></nodata-msg>
+               
+            </main>
+        </div>
+        <div class="cart" v-bind:class="{ collapse: !isVisibleCart }">
+            <p class="text-right"><button class="closecart" type="button" @click="ShowCart" title="Закрыть корзину">X</button></p>
+            <h2>Корзина</h2>
+            <hr>
+            <cart class="cart-list" v-if="cartGoods.length != 0" :goods="cartGoods"></cart>
+            <nodata-msg v-if="this.cartGoods.length === 0" msg="Корзина пуста!"></nodata-msg>
+        </div>
+    </div>
+
+
+    <script src="js/vue/vue.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
+
+
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Static.html</h1>
+
+    <div id="app">
+        <h2>Catalog</h2>
+        <div class="catalog" v-for="good of catalog">
+            {{ good.name }} (${{ good.price }}) <button v-on:click="addHandler(good)">+</button>
+        </div>
+
+        <hr />
+        <h2>Cart</h2>
+        <div class="cart" v-for="good of cart">
+            {{ good.name }} (${{ good.price }})
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="main.js"></script>
+</body>
+</html> -->
